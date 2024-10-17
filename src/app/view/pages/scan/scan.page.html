@@ -1,0 +1,22 @@
+<app-header></app-header>
+<ion-content [fullscreen]="true">
+  <ion-content>
+    <ion-grid>
+      <ion-row class="ion-justify-content-center text-center">
+        <ion-col style="font-size: 20px;" class="text-center">
+          Capture Advertising Wrap
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="6" *ngFor="let photo of currentPhotos">
+          <ion-img [src]="photo.webviewPath"></ion-img>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-align-items-end">
+        <ion-col>
+          <ion-button expand="block" (click)="onCamera()">Capture Photo<ion-icon name="camera" style="margin-left: 2px;"></ion-icon></ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-content>

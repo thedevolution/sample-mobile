@@ -1,0 +1,96 @@
+<app-header [backButton]="false"></app-header>
+<ion-content [fullscreen]="true">
+  <div class="welcome-header">
+    <table class="greeting-card">
+      <tr>
+        <td>
+          <div class="welcome-line"></div>
+        </td>
+        <td>
+          <div class="greeting">Welcome, Mike</div>
+        </td>
+        <td>
+          <div class="welcome-line"></div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <ion-content scrollY="true" style="width: 100%; height: 100%;">
+    <ion-grid class="container">
+      <ion-row>
+        <ion-col>
+            <ion-card class="dashboard-btn" (click)="onTrackDrivingZone()">
+              <ion-grid>
+                <ion-row>
+                  <ion-col class="card-col">
+                    <ion-icon name="navigate" class="ion-icon-btn"></ion-icon>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col class="card-col">
+                    <ion-card-header class="card-header-title">Track Driving Zones</ion-card-header>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+            </ion-card>
+        </ion-col>
+
+        <ion-col>
+          <ion-card class="dashboard-btn" (click)="onActivity()">
+            <ion-grid>
+              <ion-row>
+                <ion-col class="card-col">
+                  <ion-icon name="analytics" class="ion-icon-btn"></ion-icon>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col class="card-col">
+                  <ion-card-header class="card-header-title">View Activity</ion-card-header>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-card class="dashboard-btn" (click)="onScan()">
+            <ion-grid>
+              <ion-row>
+                <ion-col class="card-col">
+                  <ion-icon name="camera" class="ion-icon-btn"></ion-icon>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col class="card-col">
+                  <ion-card-header class="card-header-title">
+                    Scan/Activate
+                  </ion-card-header>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+
+          </ion-card>
+
+        </ion-col>
+        <ion-col>
+          <ion-card class="dashboard-btn" (click)="onProfile()">
+            <ion-grid>
+              <ion-row>
+                <ion-col class="card-col">
+                  <ion-icon name="person-circle" class="ion-icon-btn"></ion-icon>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col class="card-col">
+                  <ion-card-header class="card-header-title">Profile</ion-card-header>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-content>

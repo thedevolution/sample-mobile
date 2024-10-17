@@ -1,0 +1,140 @@
+@import "../../../../theme/colors.scss";
+
+.welcome-header {
+  font-size: 20pt;
+  padding-top: 3vh;
+  height: 10vh;
+  width: 100%;
+  background: white;
+  color: $primary;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome-line {
+  background: $primary;
+  height: 1px;
+  width: 22.5vw;
+  max-width: 40vw;
+}
+
+.greeting-card {
+  margin-left: 2.5vw;
+}
+
+.greeting {
+  width: 50vw;
+}
+
+ion-card {
+  position: relative;
+  text-align: center;
+}
+
+ion-card-header {
+  font-weight: bold;
+  width: 100%;
+}
+
+// .no-scroll .scroll-content {
+//   overflow: hidden;
+// }
+
+.card-header-title {
+  font-size: 3.2vw;
+  color: $primary;
+}
+
+// .card-title {
+//   position: absolute;
+//   top: 36%;
+//   font-size: 3.2vh;
+//   width: 100%;
+//   font-weight: bold;
+//   color: darkgray;
+// }
+
+.card-col {
+  padding: 0px;
+}
+
+// .card-header-md {
+//   padding: 0px;
+// }
+
+.dashboard-btn {
+  background-size: 100% 100%;
+  border-radius: 25px;
+  min-height: 20vh;
+  display: flex !important;
+  align-content: center !important;
+  align-items: center !important;
+  cursor: pointer;
+}
+
+.ion-icon-btn {
+  font-size: 10vh;
+  color: #003c99;
+}
+
+// .card-subtitle {
+//   font-size: 1.5vw;
+//   position: absolute;
+//   top: 52%;
+//   width: 100%;
+//   color: $primary;
+// }
+
+
+html,
+body,
+.scroll
+
+/* because the <ion-content> content is placed inside a div.scroll */
+  {
+  height: 100%;
+}
+
+.container {
+  min-height: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+// .col {
+//   padding: 0px;
+// }
+
+.container>ion-row {
+  flex: 1;
+  display: flex;
+  min-height: 100%;
+}
+
+.ion-row>ion-col {
+  flex: 1;
+  flex-grow: 1;
+  color: #fff;
+
+  /* Flex for these containers (cells) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container i[class^="ion-"] {
+  font-size: 90px;
+}
+
+@media (orientation: landscape) {
+
+  .ion-icon-btn {
+    font-size: 20vh;
+  }
+
+  .no-scroll .scroll-content {
+    overflow: auto;
+  }
+}

@@ -1,0 +1,49 @@
+<ion-content padding>
+  <ion-grid class="grid-content">
+    <ion-row class="logo-row">
+      <ion-col class="text-center" style="font-size: 84px;">
+        AIM
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list inset>
+          <ion-item class="item-input">
+            <ion-label>
+              <ion-icon name="person"></ion-icon>
+            </ion-label>
+            <ion-input name="username" placeholder="Username" class="login-input"></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list inset>
+          <ion-item class="item-input">
+            <ion-label>
+              <ion-icon name="lock-closed"></ion-icon>
+            </ion-label>
+            <ion-input name="password" type="password" placeholder="Password" class="login-input"></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list inset class="submit-btn" (click)="onSubmitLogin()">
+          <div style="padding-top: 2px;">
+            Login
+          </div>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="grid-content">
+    <ion-row >
+      <ion-col col-3 class="text-center">Password?</ion-col>
+      <ion-col col-1 class="text-center separator">|</ion-col>
+      <ion-col col-3 class="text-center">Register</ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

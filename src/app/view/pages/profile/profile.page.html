@@ -1,0 +1,38 @@
+<app-header></app-header>
+<ion-content>
+  <ion-fab slot="fixed" vertical="top" horizontal="end">
+      <ion-fab-button (click)="onToggleEditing()">
+        <ion-icon *ngIf="isEditDisabled" name="create"></ion-icon>
+        <ion-icon *ngIf="!isEditDisabled" name="checkmark"></ion-icon>
+      </ion-fab-button>
+  </ion-fab>
+
+  <div class="background">
+      
+  </div>
+  <div [formGroup]="profileForm">
+  <ion-item>
+      <ion-input label="Name" type="text" [disabled]="isEditDisabled" formControlName="name"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-input label="Gender" type="text" [disabled]="isEditDisabled" formControlName="gender"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-input label="Address" type="text" [disabled]="isEditDisabled" formControlName="address"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-datetime-button label="Birth Date" datetime="datetime" [disabled]="isEditDisabled"></ion-datetime-button>
+      <ion-modal [keepContentsMounted]="true">
+        <ng-template>
+          <ion-datetime
+            id="datetime"
+            [value]="profileForm.controls['dateOfBirth']"
+          ></ion-datetime>
+        </ng-template>
+      </ion-modal>
+  </ion-item>
+  <ion-item>
+      <ion-input label="Phone Number" type="text" [disabled]="isEditDisabled" formControlName="phoneNumber"></ion-input>
+  </ion-item>
+</div>
+</ion-content>

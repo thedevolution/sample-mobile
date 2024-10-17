@@ -1,0 +1,161 @@
+@import "../../../../theme/colors.scss";
+
+
+// .background {
+// 	background: white;
+// 	-webkit-background-size: cover;
+// 	-moz-background-size: cover;
+// 	-o-background-size: cover;
+// 	background-size: cover;
+
+// 	&:before {
+// 		content: '';
+// 		position: absolute;
+// 		top: 0;
+// 		right: 0;
+// 		bottom: 0;
+// 		left: 0;
+// 		background-image: white;
+// 		opacity: .35;
+// 	}
+// }
+
+.grid-content {
+	max-width: 350px;
+}
+
+.login-img {
+	width: 300px;
+
+}
+
+.list-md[inset] {
+	margin: 0px;
+	border: 1px solid grey;
+	border-radius: 8px;
+}
+
+.item-input {
+	top: -10px;
+	left: -15px
+}
+
+.login-input {
+	margin-left: 10px;
+}
+
+.submit-btn {
+	background-color: $primary;
+	color: white;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+
+
+.label-md {
+	margin: 0px;
+	padding-left: 0px;
+}
+
+.item-md {
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 0px;
+}
+
+.item-md.item-block .item-inner {
+	padding-right: 0px;
+}
+
+ion-label {
+	padding-left: 15px;
+}
+
+ion-list {
+	height: 45px;
+}
+
+ion-select {
+	max-width: 100%;
+}
+
+.select-md {
+	padding: 0px;
+}
+
+.select-icon {
+	display: none;
+}
+
+.col {
+	padding: 2px;
+}
+
+.center-login-item {
+	margin: auto;
+	max-width: 350px;
+}
+
+.logo-row {
+	height: 40vh;
+	padding-bottom: 50px;
+}
+
+@media (orientation: landscape) {
+	.logo-row {
+		height: 10vh;
+		padding-top: 0px;
+		padding-bottom: 5px;
+	}
+
+	.login-img {
+		padding-bottom: 15px;
+	}
+}
+
+ion-card.card {
+	box-shadow: none;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+}
+
+ion-row {
+	align-items: center;
+	text-align: center;
+}
+
+ion-list {
+	align-items: center;
+	text-align: center;
+}
+
+a,
+p,
+ion-card-header.card-header {
+	color: $primary !important;
+}
+
+.item {
+	margin-bottom: 10px;
+	background: white;
+	border: medium none;
+
+	.text-input {
+		color: $primary;
+	}
+}
+
+.icon {
+	padding-right: 10px;
+}
+
+.bottom {
+	position: absolute;
+	bottom: 0;
+}
+
+.needCredentialsChange {
+	align-items: center;
+	text-align: center;
+}

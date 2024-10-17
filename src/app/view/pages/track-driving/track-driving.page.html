@@ -1,0 +1,50 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>AIM</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<app-header></app-header>
+<ion-content [fullscreen]="true">
+  <ion-content>
+    <ion-grid>
+      <ion-row class="ion-justify-content-center">
+        <ion-col style="font-size: 56px;font-weight: bold;" class="text-center">
+          {{distance | number}}
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center text-center">
+        <ion-col style="font-size: 20px;" class="text-center">
+          Distance/Miles
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center">
+        <ion-col style="font-size: 56px;font-weight: bold;" class="text-center">
+          {{speed | number}}
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center text-center">
+        <ion-col style="font-size: 20px;" class="text-center">
+          Speed (MPH)
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center text-center">
+        <ion-col style="font-size: 56px;font-weight: bold;" class="text-center">
+          {{renderStopWatch}}
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center text-center">
+        <ion-col style="font-size: 20px;" class="text-center">
+          Duration
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-align-items-end">
+        <ion-col>
+          <ion-button expand="block" (click)="onStartStopTimer()">{{startStopWatchButtonValue}} Vehicle Tracking</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-content>

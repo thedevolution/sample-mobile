@@ -1,0 +1,32 @@
+.ProfilePic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 120px;
+  max-height: 120px;
+}
+
+.ProfilePicContainer {
+  align-content: center;
+}
+
+.background {
+  background-size: 100% 100%;
+  height: 10%;
+}
+
+.BackgroundDisplay {
+  background-image: linear-gradient(to bottom, AliceBlue, Snow);
+}
+
+.CenteredText {
+  text-align: center;
+}
+
+.profile-icon {
+  font-size: 20vh;
+}
+
+ion-content {
+  padding-bottom: 50px;
+}
